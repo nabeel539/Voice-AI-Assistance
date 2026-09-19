@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+*.egg
+
+# Environment
+.env
+.env.*
+*.env
+**/.env
+**/.env.*
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+.next/
+out/
+
+# Test outputs
+apps/backend/tests/manual/test_audio.wav
+apps/backend/tests/manual/response.mp3
+
+# Logs
+*.log
+
+# Database
+*.db
+*.sqlite3

@@ -1,0 +1,26 @@
+STEP 1
+Property Details
+ ├── address
+ ├── suburb
+ └── postcode
+
+STEP 2
+Energy Details
+ ├── energy_type
+ ├── electricity_meter_type
+ └── has_solar
+
+STEP 3
+Usage Details
+ ├── electricity_usage
+ └── usage_period
+
+STEP 4
+Customer Details
+ ├── first_name
+ ├── last_name
+ └── email
+
+STEP 5
+Completion
+ └── Submit Journey

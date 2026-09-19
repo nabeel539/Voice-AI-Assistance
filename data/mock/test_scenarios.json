@@ -1,0 +1,122 @@
+[
+  {
+    "scenario_id": "happy_path",
+    "lead_id": "ENG-DEMO-001",
+    "description": "Customer cooperates and provides valid information",
+    "rule": "happy_path"
+  },
+  {
+    "scenario_id": "misheard_answer",
+    "lead_id": "ENG-DEMO-001",
+    "description": "Customer response is unclear, clarification is requested and answered",
+    "rule": "misheard_answer"
+  },
+  {
+    "scenario_id": "invalid_answer",
+    "lead_id": "ENG-DEMO-001",
+    "description": "Customer gives invalid field value, corrective prompt triggered",
+    "rule": "invalid_answer"
+  },
+  {
+    "scenario_id": "customer_busy",
+    "lead_id": "ENG-DEMO-001",
+    "description": "Customer states they are busy; call ends respectfully",
+    "rule": "customer_decline_busy"
+  },
+  {
+    "scenario_id": "not_interested",
+    "lead_id": "ENG-DEMO-001",
+    "description": "Customer declines with not interested; respectful termination",
+    "rule": "customer_decline_busy"
+  },
+  {
+    "scenario_id": "frustration",
+    "lead_id": "ENG-DEMO-005",
+    "description": "Customer becomes frustrated during information collection",
+    "rule": "customer_frustration"
+  },
+  {
+    "scenario_id": "human_request",
+    "lead_id": "ENG-DEMO-006",
+    "description": "Customer explicitly asks to speak with a human",
+    "rule": "human_request"
+  },
+  {
+    "scenario_id": "payment_boundary",
+    "lead_id": "ENG-DEMO-007",
+    "description": "Customer provides or asks about payment information",
+    "rule": "payment_boundary"
+  },
+  {
+    "scenario_id": "off_script",
+    "lead_id": "ENG-DEMO-001",
+    "description": "Customer asks question outside energy recovery script",
+    "rule": "off_script"
+  },
+  {
+    "scenario_id": "advice_request",
+    "lead_id": "ENG-DEMO-001",
+    "description": "Customer asks for retailer/tariff recommendation",
+    "rule": "no_advice"
+  },
+  {
+    "scenario_id": "low_confidence",
+    "lead_id": "ENG-DEMO-008",
+    "description": "Customer response cannot be reliably understood (<0.60)",
+    "rule": "low_confidence"
+  },
+  {
+    "scenario_id": "multiple_retries",
+    "lead_id": "ENG-DEMO-001",
+    "description": "Repeated failed validation exceeds retry threshold",
+    "rule": "repeated_failure"
+  },
+  {
+    "scenario_id": "hardship",
+    "lead_id": "ENG-DEMO-001",
+    "description": "Customer mentions financial hardship or eviction",
+    "rule": "sensitive_situation"
+  },
+  {
+    "scenario_id": "bereavement",
+    "lead_id": "ENG-DEMO-001",
+    "description": "Customer mentions bereavement or deceased estate",
+    "rule": "sensitive_situation"
+  },
+  {
+    "scenario_id": "medical_equipment",
+    "lead_id": "ENG-DEMO-001",
+    "description": "Customer has life support or critical medical equipment",
+    "rule": "sensitive_situation"
+  },
+  {
+    "scenario_id": "dispute",
+    "lead_id": "ENG-DEMO-001",
+    "description": "Customer mentions ombudsman or legal dispute",
+    "rule": "sensitive_situation"
+  },
+  {
+    "scenario_id": "consent_declined",
+    "lead_id": "ENG-DEMO-001",
+    "description": "Customer explicitly declines call recording consent",
+    "rule": "mandatory_consent"
+  },
+  {
+    "scenario_id": "pre_consent_attempt",
+    "lead_id": "ENG-DEMO-001",
+    "description": "Field collection attempted before recording consent granted",
+    "rule": "mandatory_consent"
+  },
+  {
+    "scenario_id": "dnc_blocked",
+    "lead_id": "ENG-DEMO-001",
+    "description": "Phone number is on Do-Not-Call registry",
+    "rule": "dnc_enforcement"
+  },
+  {
+    "scenario_id": "dnc_allowed",
+    "lead_id": "ENG-DEMO-001",
+    "description": "Phone number is cleared to call",
+    "rule": "dnc_enforcement"
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "name": "address",
+    "step": "property_details",
+    "field_type": "string",
+    "required": true,
+    "question": "Could you please tell me your street address?",
+    "validation": {
+      "min_length": 5
+    },
+    "max_retries": 2,
+    "escalation_condition": null
+  },
+  {
+    "name": "suburb",
+    "step": "property_details",
+    "field_type": "string",
+    "required": true,
+    "question": "And what suburb is that in?",
+    "validation": {
+      "min_length": 2
+    },
+    "max_retries": 2,
+    "escalation_condition": null
+  },
+  {
+    "name": "postcode",
+    "step": "property_details",
+    "field_type": "string",
+    "required": true,
+    "question": "Could you please tell me your postcode?",
+    "validation": {
+      "pattern": "^[0-9]{4}$"
+    },
+    "max_retries": 2,
+    "escalation_condition": null
+  },
+  {
+    "name": "energy_type",
+    "step": "energy_details",
+    "field_type": "enum",
+    "required": true,
+    "question": "Are you looking to compare electricity, gas, or both?",
+    "validation": {
+      "allowed_values": ["electricity", "gas", "both"]
+    },
+    "max_retries": 2,
+    "escalation_condition": null
+  },
+  {
+    "name": "electricity_meter_type",
+    "step": "energy_details",
+    "field_type": "enum",
+    "required": true,
+    "question": "Do you have a single rate meter or a time-of-use meter? If you're not sure, that's okay.",
+    "validation": {
+      "allowed_values": ["single_rate", "time_of_use", "unknown"]
+    },
+    "max_retries": 2,
+    "escalation_condition": "confusion"
+  },
+  {
+    "name": "has_solar",
+    "step": "energy_details",
+    "field_type": "boolean",
+    "required": true,
+    "question": "Do you have solar panels on your property?",
+    "validation": null,
+    "max_retries": 2,
+    "escalation_condition": null
+  },
+  {
+    "name": "electricity_usage",
+    "step": "usage_details",
+    "field_type": "number",
+    "required": true,
+    "question": "Do you know roughly how much electricity you use? You can tell me in kilowatt hours or the dollar amount from your last bill.",
+    "validation": {
+      "min_value": 0
+    },
+    "max_retries": 2,
+    "escalation_condition": "confusion"
+  },
+  {
+    "name": "usage_period",
+    "step": "usage_details",
+    "field_type": "enum",
+    "required": true,
+    "question": "Is that a monthly or quarterly amount?",
+    "validation": {
+      "allowed_values": ["monthly", "quarterly"]
+    },
+    "max_retries": 2,
+    "escalation_condition": null
+  },
+  {
+    "name": "first_name",
+    "step": "customer_details",
+    "field_type": "string",
+    "required": true,
+    "question": "Could I get your first name, please?",
+    "validation": {
+      "min_length": 1,
+      "pattern": "^[a-zA-Z\\s'-]+$"
+    },
+    "max_retries": 2,
+    "escalation_condition": null
+  },
+  {
+    "name": "last_name",
+    "step": "customer_details",
+    "field_type": "string",
+    "required": true,
+    "question": "And your last name?",
+    "validation": {
+      "min_length": 1,
+      "pattern": "^[a-zA-Z\\s'-]+$"
+    },
+    "max_retries": 2,
+    "escalation_condition": null
+  },
+  {
+    "name": "email",
+    "step": "customer_details",
+    "field_type": "email",
+    "required": true,
+    "question": "Could you please provide your email address? We'll send the comparison results there.",
+    "validation": {
+      "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+    },
+    "max_retries": 3,
+    "escalation_condition": null
+  }
+]
