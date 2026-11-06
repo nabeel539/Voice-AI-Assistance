@@ -1,4 +1,4 @@
-# CIMET Reconnect — Autonomous Voice AI for Energy Journey Recovery
+# Reconnect — Autonomous Voice AI for Energy Journey Recovery
 
 > **CIMET / econnex Engineering Hackathon Solution**  
 > An enterprise-grade, deterministic AI voice recovery agent (*"Emma from CIMET"*) engineered to proactively re-engage customers who dropped off during their energy comparison journey, capture missing fields with real-time validation, confirm pre-existing CRM data, submit valid payloads to the CIMET sandbox, and gracefully escalate complex situations to human specialists.
